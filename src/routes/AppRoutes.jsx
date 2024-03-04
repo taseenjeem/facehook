@@ -9,26 +9,27 @@ const AppRoutes = createBrowserRouter([
   {
     path: "/",
     element: <LandingPage />,
+    errorElement: <InvalidRoute />,
   },
   {
     path: "/home",
     element: <LandingPage />,
+    errorElement: <InvalidRoute />,
   },
   {
     path: "/login",
     element: <Login />,
+    errorElement: <InvalidRoute />,
   },
   {
     path: "/create-new-account",
     element: <Register />,
+    errorElement: <InvalidRoute />,
   },
   {
     path: "/me",
     element: <Profile />,
-  },
-  {
-    path: "*",
-    element: <InvalidRoute />,
+    errorElement: <InvalidRoute />,
   },
 ]);
 
